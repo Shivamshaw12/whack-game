@@ -1,0 +1,269 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: #011F3F;
+    color: white;
+    background-size: cover;
+}
+
+
+
+.score {
+    display: grid;
+    grid-template-areas:
+        'curr currsco'
+        'high hsco';
+    width: 880px;
+    margin: 15px auto;
+    text-align: center;
+}
+
+.curr {
+    grid-area: curr;
+    margin: 2px;
+    padding: 5px;
+
+}
+
+#CurrentScore {
+    grid-area: currsco;
+    margin: 2px;
+    padding: 5px
+}
+
+.High {
+    grid-area: hsco;
+    margin: 2px;
+    padding: 5px
+}
+
+#Highscore {
+    grid-area: high;
+    margin: 2px;
+    padding: 5px
+}
+
+.score h1 {
+    margin: 10px 50px;
+}
+
+.score h2 {
+    margin: 10px 50px;
+}
+
+.gamearea {
+    display: grid;
+    grid-template-areas:
+        'level gamearea rules';
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.rules {
+    width: 15vw;
+    text-align: center;
+    grid-area: rules;
+}
+
+.container {
+    width: 100%;
+    margin: 15px auto;
+}
+
+.mainarea {
+    grid-area: gamearea;
+    /* display: grid; */
+    grid-template-areas:
+        'box1 box2'
+        'box3 box4';
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    /* width: 400px;
+height: 400px;*/
+    padding: 15px;
+    margin: auto
+}
+
+.col{
+    display: flex;
+}
+
+.box {
+    margin: 25px;
+  display: inline-block;
+  height: 80px;
+  width:80px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+#box1 {
+    grid-area: box1;
+}
+
+#box2 {
+    grid-area: box2;
+}
+
+#box3 {
+    grid-area: box3;
+}
+
+#box4 {
+    grid-area: box4;
+}
+
+#box5 {
+    grid-area: box5;
+}
+
+#box6 {
+    grid-area: box6;
+}
+
+#box7 {
+    grid-area: box7;
+}
+
+#box8 {
+    grid-area: box8;
+}
+
+#box9 {
+    grid-area: box9;
+}
+
+
+.btn {
+    width: 100px;
+    padding: 10px;
+    /* margin: 15px; */
+    border: 2px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 2px;
+}
+
+.level {
+    text-align: center;
+    grid-area: level;
+    width: 15vw;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+#gameover {
+    position: fixed;
+    top: 50%;
+    left: 2%;
+    width: 96%;
+
+}
+
+.over1 {
+    font-size: 25px;
+    color: rgb(185, 19, 19);
+    width: 50%;
+    margin: auto;
+    display: block;
+    background-color: blanchedalmond;
+    border: 2px solid red;
+    padding: 10px;
+    text-align: center;
+    margin: auto
+}
+
+
+@media screen and (max-width:880px) {
+    .score {
+        display: grid;
+        grid-template-areas:
+            'curr'
+            'currsco'
+            'high'
+            'hsco';
+        width: 80%;
+        margin: 10px auto;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .gamearea {
+        grid-template-areas:
+            'level'
+            'rules'
+            'gamearea';
+
+
+    }
+
+    .container {
+        width: 90%;
+        margin: 15px auto;
+        justify-content: center;
+    }
+
+    .mainarea {
+        grid-area: gamearea;
+        display: grid;
+        grid-template-areas:
+            'box1 box2 box3'
+            'box4 box5 box6'
+            'box7 box8 box9';
+        border: 2px solid white;
+        width: 19rem;
+        /* height: 20rem;*/
+        margin: auto;
+        padding: 5px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box {
+        border: 2px solid white;
+        width: 4rem;
+        height: 4rem;
+        padding: 10px;
+        margin: 5px;
+        box-shadow: white -2px -2px 5px -2px;
+    }
+
+    .message {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 15px auto;
+        text-align: center;
+        width: 90%;
+    }
+
+    .rules {
+        grid-area: rules;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        margin: 5px;
+        padding: 10px 40px;
+    }
+
+    .level {
+        text-align: center;
+        grid-area: level;
+        /* width: 25vw; */
+        text-align: center;
+        width: 90%;
+        margin: 15px;
+    }
+}

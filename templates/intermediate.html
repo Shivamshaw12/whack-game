@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whack a box</title>
+    <link rel="stylesheet" href="static/css/intermediate.css">
+</head>
+
+<body>
+    <div class="score" id="dispScore">
+        <h1 class="curr">Your current score :</h1>
+        <h1 class="currsco" id="CurrentScore">0</h1>
+        <h2 class="High" id="Highscore">High Score :</h2>
+        <h2 class="Hsco" id="highsco">0</h2>
+    </div>
+    <div class="gamearea" id="gamebox">
+        <div class="level">
+            <h2 class="level_indicator">
+                You current level is:
+            </h2>
+            <p class="level_number" id="lvlnm">
+                1
+            </p>
+        </div>
+        <div class="container">
+            <div class="mainarea">
+                <div onclick="scoreing1()" class="box" id="box1"></div>
+                <div onclick="scoreing2()" class="box" id="box2"></div>
+                <div onclick="scoreing3()" class="box" id="box3"></div>
+                <div onclick="scoreing4()" class="box" id="box4"></div>
+                <div onclick="scoreing5()" class="box" id="box5"></div>
+                <div onclick="scoreing6()" class="box" id="box6"></div>
+                <div onclick="scoreing7()" class="box" id="box7"></div>
+                <div onclick="scoreing8()" class="box" id="box8"></div>
+                <div onclick="scoreing9()" class="box" id="box9"></div>
+            </div>
+        </div>
+        <div class="rules">
+            <h2>Rules :</h2>
+            <p>Click the box while it is glowing and earn 10 points. If you click a box after it stops glowing then you
+                will loose one life. You have 3 lives in total, so click wisely.</p>
+        </div>
+    </div>
+
+    <div class="message">
+        <h2 class="content">To Start/Stop click the button below</h2>
+        <button onclick="exit()" class="btn content">Start/Stop</button>
+    </div>
+
+    <div class="over" id="gameover">
+        <div class="over1">
+            <h1>Start The Game</h1>
+        </div>
+    </div>
+    <script src="static/script.js"></script>
+</body>
+
+</html>
